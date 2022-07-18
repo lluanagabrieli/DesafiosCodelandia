@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ARQUIVO CSS-->
+    <link rel="stylesheet" href="desafio_1.css">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <title>CODELÂNDIA</title>
+</head>
+
+<body style="background-color: #F3F5F7;">
+    <header class="cabecalho" style="min-width: 100%">
+        <nav class="cabecalho-nav">
+            <a class="cabecalho-nav-item">Codelândia</a>
+            <a class="cabecalho-nav-item">blog</a>
+        </nav>
+        
+        <form style="margin:auto">
+            <div class="input-icons" style="width: 100%;">
+                <i class="fa-solid fa-magnifying-glass fa-lg icon"></i>
+
+                <input class="input-field" 
+                        type="text" 
+                        placeholder="Pesquisar no blog"
+                        >
+            </div>
+        </form>
+    </header>
+
+    <main class="content" style="margin:auto; width: 100%;">
+        <!-- FIRST CONTENT-->
+        <div class="card border-light">
+            <div class="card-body">
+                <div class="card-date">
+                    <h1 class="card-subtitle">11 de jul, 2022</h1>
+                    <i class="fa-regular fa-heart fa-lg icon-card"></i>
+                </div>
+
+                <h5 class="card-title"> Agora é oficial: o Windows 11 está vindo </h5>
+
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nemo enim corporis aperiam modi impedit ducimus, vel repudiandae, vitae eaque repellendus iste quibusdam amet, omnis tempore?
+                </p>
+            </div>
+        </div>
+
+        <!-- SECOND CONTENT-->
+        <div class="card border-light">
+            <div class="card-body">
+
+                <div class="card-date">
+                    <h1 class="card-subtitle">11 de jul, 2022</h1>
+                    <i class="fa-regular fa-heart fa-lg icon-card"></i>
+                </div>
+
+                <h5 class="card-title">Tim Berners-Lee vai leiloar código-fonte da web</h5>
+
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetur quidem asperiores consequatur hic consequuntur magni ipsum quas temporibus illum voluptatum rerum, cupiditate incidunt labore nostrum! Eaque debitis accusantium cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid amet, blanditiis ut porro minus ex ipsum id corporis voluptatem, at fugit explicabo dolor hic tempora maiores ab sed eos.</p>
+            </div>
+        </div>
+
+        <!-- THIRD CONTENT-->
+        <div class="card border-light">
+            <div class="card-body">
+
+                <div class="card-date">
+                    <h1 class="card-subtitle">11 de jul, 2022</h1>
+                    <i class="fa-regular fa-heart fa-lg icon-card"></i>
+                </div>
+
+                <h5 class="card-title">Tem Firefox novo no pedaço e você vai querer migrar</h5>
+
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</p>
+            </div>
+        </div>
+
+        <!-- FOURTH CONTENT-->
+        <div class="card border-light">
+            <div class="card-body">
+                <div class="card-date">
+                    <h1 class="card-subtitle">11 de jul, 2022</h1>
+                    <i class="fa-regular fa-heart fa-lg icon-card"></i>
+                </div>
+
+                <h5 class="card-title">John McAfee, criador do antivírus McAfee, morre</h5>
+
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        const sr = ScrollReveal({
+            origin: 'left',
+            distance: '50px',
+            duration: 1000,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.card', { delay: 200 });
+        ScrollReveal().reveal('.card-subtitle', { delay: 400 });
+        ScrollReveal().reveal('.card-title', { delay: 500 });
+        ScrollReveal().reveal('.card-text', { delay: 600 });
+  
+</script>
+
+</body>
+    
+</html>
