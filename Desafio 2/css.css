@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root {
     --bgSite: #f6f6f6;
     --bgCard: #ebe9ea;
@@ -6,59 +8,59 @@
   
     --title: #181818;
     --text: #474747;
-  }
+}
   
   /*Reset*/
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  html {
+html {
     font-size: 62.5%;
-  }
+}
 
-  body {
+body {
     font-size: 1.6rem;
     background-color: var(--bgSite);
-  }
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
-  }
+}
 
-  ul, ol {
+ul, ol {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  a {
+a {
     text-decoration: none;
-  }
+}
 
-  img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
-  }
+}
 
-  button, input {
+button, input {
     border: 0;
-  }
+}
 
-  button:focus,
-  input:focus {
+button:focus,
+input:focus {
     border: 0;
-  }
+}
 
-.header-1{
+.header-1 h3{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,30 +69,65 @@
     color: var(--white);
     width: 100%;
     height: auto;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-.header-2{
+.header-2 h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
     padding: 10px;
-    background-color: var(--white);
+    background-color: var(--bgSite);
+
     color: var(--title);
     width: 100%;
     height: auto;
+
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
-.header-3 {
-  position: relative;
-  z-index: 1;
+.header-3{
+    height: 378px;
+    background-image: url(img/wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
-.header-3 .bg {
-  position: absolute;
-  z-index: -1;
-  background: url(img/wallpaper.jpeg) center center no-repeat;
-  background-size: 100%;
-  filter: brightness(50%);
-  width: 100%;
-  height: 378px;
+.header-efect{
+    background-color: rgba(24, 24, 24, 0.61);
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.text-header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 6%;
+    color: var(--bgSite);
+    text-align: left;
+    width: 630px;
+
+}
+#header-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+#header-text{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 35.31px;
 }
