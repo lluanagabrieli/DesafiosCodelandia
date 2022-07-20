@@ -24,6 +24,8 @@ html {
 body {
     font-size: 1.6rem;
     background-color: var(--bgSite);
+
+    min-height: 100vh;
 }
 
 h1,
@@ -35,7 +37,7 @@ h6 {
     margin: 0;
 }
 
-ul, ol {
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -46,9 +48,10 @@ a {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
     display: block;
+    width: 250px;
+    height: 150px;
+    margin: 70px 25px 10px 25px;
 }
 
 button, input {
@@ -80,7 +83,7 @@ input:focus {
     flex-direction: row;
     justify-content: center;
 
-    padding: 10px;
+    padding: 15px;
     background-color: var(--bgSite);
 
     color: var(--title);
@@ -131,3 +134,64 @@ input:focus {
   font-weight: 500;
   line-height: 35.31px;
 }
+
+.first-div-main{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    padding: 70px 10px 0 10px;
+    width: 100%;
+    height: auto;
+}
+
+.title-main{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--title);
+}
+
+.text-main{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text);
+}
+
+li{
+    background-color: var(--bgCard);
+    min-width: 300px;
+    min-height: 300px;
+}
+
+/* SEÇÃO DE AMOSTRA */
+.section{
+    padding: 40px 50px;
+    margin: 0;
+    width: 100%;
+}
+
+.ol-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 15px;
+    padding-top: 40px;
+}
+
+.footer{
+    position: sticky;
+    top: 100%;
+    width: 100%;
+    background-color: var(--title);
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+} 
