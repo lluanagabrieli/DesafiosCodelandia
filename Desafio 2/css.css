@@ -195,3 +195,23 @@ li{
     text-align: center;
     padding: 20px;
 } 
+
+@media (min-width: 290px) and (max-width: 480px){
+
+    img {
+        display: block;
+        width: 220px;
+        height: 120px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        min-height: 220px;
+    }
+}
